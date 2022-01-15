@@ -55,6 +55,89 @@ nav {
     margin-top: 0;
     margin-bottom: 10px;
 }
+.banner-text span{
+    font-size: 45px;
+    white-space: nowrap;
+    position: relative;
+    color: transparent;
+}
+.banner-text span::before{
+    content: 'Influencer';
+    position: absolute;
+    top: 0;
+    left: 0;
+    color:deeppink;
+    animation: typing 3s linear infinite;
+}
+@keyframes typing {
+    0% {
+        content: 'I|';
+    }
+
+    6% {
+        content: 'In|';
+    }
+    12% {
+        content: 'Inf|';
+    }
+    18% {
+        content: 'Infl|';
+    }
+    24% {
+        content: 'Influ|';
+    }
+    30% {
+        content: 'Influe|';
+    }
+    36% {
+        content: 'Influen|';
+    }
+    42% {
+        content: 'Influenc|';
+    }
+    48% {
+        content: 'Influence|';
+    }
+    54% {
+        content: 'Influencer|';
+    }
+    60%,80%{
+        content: 'Influencer|';
+    }
+    82%{
+        content: 'Influence|';
+    }
+    84%{
+        content: 'Influenc|';
+    }
+    86%{
+        content: 'Influen|';
+    }
+    88%{
+        content: 'Influe|';
+    }
+    90%{
+        content: 'Influ|';
+    }
+    92%{
+        content: 'Infl|';
+    }
+    94%{
+        content: 'Inf|';
+    }
+    96%{
+        content: 'In|';
+    }
+    98%{
+        content: 'I|';
+    }
+    100%{
+        content: '|';
+    }
+
+   
+}
+
 .banner-text p {
     font-size: 15px;
     font-weight: 300;
