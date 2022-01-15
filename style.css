@@ -21,6 +21,7 @@ nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    
 }
 .main-menu{
     display: flex;
