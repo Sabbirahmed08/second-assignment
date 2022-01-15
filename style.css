@@ -290,7 +290,7 @@ hr{
     color: grey;
 }
 .footer-icon i{
-    margin-right: 20px;
+    margin-right: 15px;
     width: 30px;
     height: 30px;
     background-color: rgba(128, 128, 128, 0.308);
@@ -322,15 +322,7 @@ hr{
         margin: auto;
         text-align: center;
     }
-    .brand-logos{
-        width: 250px;
-        height: 170px;
-        margin: auto;
-        display: grid;
-        grid-template-columns: repeat(2,1fr);
-        grid-row-gap: 20px;
-        grid-column-gap: 20px;
-    }
+   
     .contact-section{
         width: 600px;
         margin: auto;
@@ -343,6 +335,13 @@ hr{
     }
 }
 @media (max-width:800px){
+
+        html,
+        body {
+        overflow-x: hidden;
+        max-width: 100%;
+        scroll-behavior: smooth;
+    }
     .header-logo a h2{
         font-size: 20px;
         margin-left: 20px;
