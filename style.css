@@ -35,6 +35,12 @@ nav {
     font-size: 16px;
     font-weight: 500;
 }
+#nav-toggler{
+    display: none;
+}
+.nav-toogle-bar{
+    display: none;
+}
 /* Banner-style */
 .banner {
     display: flex;
@@ -155,19 +161,35 @@ hr{
     border-radius: 20px;
     margin-bottom: 50px;
 }
-.contact-section lebel{
+.contact-section label {
+    width: 60px;
+    margin-left: -260px;
+}
 
-}
-.contact-section input{
-    padding: 10px 10px;
-}
-.contact-section input, textarea{
+.contact-section input {
     width: 400px;
     margin-left: 50px;
     border-radius: 10px;
     border: none;
-    
-  
+    padding: 10px 10px;
+    margin-bottom: 15px;
+}
+.contact-section textarea {
+    width: 400px;
+    margin-left: 50px;
+    border-radius: 10px;
+    border: none;
+    padding: 10px 10px;
+}
+.contact-section button {
+    padding: 10px 30px;
+    font-size: 18px;
+    font-weight: 600;
+    background-color: white;
+    color: deeppink;
+    border: 1px solid transparent;
+    border-radius: 20px;
+    margin-top: 20px;
 }
 /* footer-style */
 
@@ -186,13 +208,114 @@ hr{
     color: grey;
 }
 .footer-icon i{
-    margin-right: 30px;
+    margin-right: 20px;
     width: 30px;
     height: 30px;
     background-color: rgba(128, 128, 128, 0.308);
     border-radius: 50%;
     line-height: 30px;
 
+}
+/* Responsive */
+@media (max-width:920px){
+    
+    .product-box{
+        grid-template-columns: repeat(2,1fr);
+       
+
+    }
+    .box{
+        margin: auto;
+    }
+    .banner{
+         flex-direction: column;
+       
+    }
+    .banner-img{
+        margin: auto;
+        margin-bottom: 50px;
+    }
+    .banner-text{
+        order: 2;
+        margin: auto;
+        text-align: center;
+    }
+    .brand-logos{
+        width: 250px;
+        height: 170px;
+        margin: auto;
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        grid-row-gap: 20px;
+    }
+    .contact-section{
+        width: 600px;
+        margin: auto;
+        padding-right: 50px;
+    }
+    .footer-content{
+        width: 650px;
+        margin: auto;
+        margin-top: 50px;
+    }
+}
+@media (max-width:800px){
+    .header-logo a h2{
+        font-size: 20px;
+    }
+    .nav-toogle-bar{
+        display: block;
+    }
+    .main-menu{
+        position: absolute;
+        top: 80px;
+        left: 0;
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+        background-color: deeppink;
+        padding: 20px 0;
+        transform: translateY(-350px);
+        transition: .5s ease-in-out;
+    }
+    .main-menu li{
+        margin-bottom: 10px;
+    }
+    .main-menu li a{
+        color: white;
+    }
+    #nav-toggler:checked ~ .main-menu{
+        transform: translateY(0);
+    }
+    .banner-text h1{
+        font-size: 30px;
+    }
+    .product-box{
+        grid-template-columns: 1fr;
+      
+    }
+    .album-title h2{
+        text-align: center;
+    }
+    
+    .contact-section{
+        width: 350px;
+        margin: auto;
+        padding-right: 50px;
+        text-align: center;
+    }
+    .contact-section input, textarea{
+        width: 200px;
+    }
+        
+      
+    .footer-content{
+        display: grid;
+        grid-template-columns: 1fr;
+        width: 400px;
+        margin: auto;
+        margin-top: 50px;
+    }
 }
 
     
